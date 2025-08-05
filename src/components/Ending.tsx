@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { slideFadeVariants } from "./utils";
+import { base, slideFadeVariants } from "./utils";
 
 export const Ending = () => {
   return (
@@ -22,7 +22,7 @@ export const Ending = () => {
         className="w-[90%] border-2 rounded-lg bg-sky-50 pb-8 flex flex-col justify-start items-center text-center"
       >
         <motion.img
-          src="/kiss.gif"
+          src={base + "/kiss.gif"}
           animate={{ y: [0, -10, 0] }}
           transition={{
             duration: 3,

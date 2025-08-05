@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { base } from "./utils";
 
 export const BackBackground = () => {
   return (
@@ -7,7 +8,7 @@ export const BackBackground = () => {
         {Array.from({ length: 120 }, (_, i) => (
           <motion.img
             key={`${i}`}
-            src="/sparkle.png"
+            src={base + "/sparkle.png"}
             animate={{ y: [0, -100, 0], rotate: [0, 360, 0] }}
             transition={{
               duration: 6,
@@ -27,7 +28,7 @@ export const Background = () => {
   return (
     <div className="w-dvw h-dvh inset-0 absolute">
       <motion.img
-        src="/sparkle.png"
+        src={base + "/sparkle.png"}
         animate={{ y: [0, -10, 0] }}
         transition={{
           duration: 3,
@@ -39,7 +40,7 @@ export const Background = () => {
         className="absolute top-4 right-2 z-30 w-12 aspect-square"
       />
       <motion.img
-        src="/sparkle.png"
+        src={base + "/sparkle.png"}
         animate={{ y: [0, -10, 0] }}
         transition={{
           duration: 3,
@@ -51,7 +52,7 @@ export const Background = () => {
         className="absolute top-8 right-10 z-30 w-10 aspect-square"
       />
       <motion.img
-        src="/smile.png"
+        src={base + "/smile.png"}
         animate={{ y: [0, -10, 0] }}
         transition={{
           duration: 3,
@@ -63,7 +64,7 @@ export const Background = () => {
         className="absolute bottom-6 left-6 z-30 w-28 aspect-square"
       />
       <motion.img
-        src="/star.png"
+        src={base + "/star.png"}
         animate={{ y: [0, -10, 0] }}
         transition={{
           duration: 3,

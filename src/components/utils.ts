@@ -8,3 +8,5 @@ export const transitionConfig = {
   duration: 0.8,
   ease: "easeInOut",
 };
+
+export const base = import.meta.env.BASE_URL

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { slideFadeVariants } from "./utils";
+import { base, slideFadeVariants } from "./utils";
 
 export const Loading = ({
   setNextSection,
@@ -66,7 +66,7 @@ export const Loading = ({
             className="flex flex-col items-center border-8 border-zinc-950 justify-center shadow-lg transition-transform ease-in-out duration-300 bg-secondary px-6 py-4 gap-4"
           >
             <img
-              src="/heart.gif"
+              src={base + "/heart.gif"}
               className="mix-blend-multiply brightness-110 w-32 aspect-square"
               alt=""
             />
