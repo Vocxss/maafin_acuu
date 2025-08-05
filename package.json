@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Vocxss.github.io/maafkanakuu-",
+  "homepage": "https://Vocxss.github.io/maafin_acuu",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
